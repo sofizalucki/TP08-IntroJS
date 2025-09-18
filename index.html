@@ -8,9 +8,12 @@
 </head>
 <body>
 
+    <section>
     <p id="resultado" ></p>
     <button onClick= "clearCons()"> Limpiar la consola y el resultado</button>
-
+    </section>
+    <section>
+        
     <div>
         <h2>EJERCICIO 1</h2>
         <p>Ingrese su nombre</p>
@@ -35,22 +38,38 @@
 
     <div>
         <h2>EJERCICIO 4</h2>
-        <button id = "Objeto" onclick="crearObjeto()">Crear objeto</button>
+        <button id = "Objeto" onClick="Ejercicio4()">Crear objeto</button>
     </div>
-    <h2>EJERCICIO 5</h2>
-        <button id = "Doble" onclick="duplicarEl()">Duplicar elementos</button>
 
+    <div>
+        <h2>EJERCICIO 5</h2>
+        <input type="text" id="numeros" placeholder="Ej: 1,2,3,4,5">
+        <button id = "Doble" onClick="Ejercicio5()">Duplicar elementos</button>
+        
+    </div>
+
+    <div>
+    
     <h2>EJERCICIO 6</h2>
         <button id = "Triangulo" onclick="triAste()">Triangulo de asteriscos</button>
-
+    </div>
+<div>        
     <h2>EJERCICIO 7</h2>
-        <button id = "NombresA" onclick="nomA()">Nombres con A</button>
-
+        <p>Ingresá nombres separados por coma. Se mostrarán los que empiezan con 'A'.</p>
+        <input type="text" id="Noms" placeholder="Ej: Ana,Juan,Alberto">
+        <button onClick= "Ejercicio7()"> Nombres con A</button>
+</div>
     <h2>EJERCICIO 8</h2>
-        <button id = "Remplazar" onclick="remplazarP()">Remplazar palabras</button>
+        <input type="text" id="cadtxt" placeholder="Texto">
+        <input type="text" id="buscarP" placeholder="Palabra a reemplazar">
+        <input type="text" id="reemplazarP" placeholder="Reemplazo">
+        <p>Ingresa una cadena de texto, una palabra que quieras reemplazar y la palabra de remplazo</p>
+        <button onClick= "Ejercicio8()"> Reemplazar palabra</button>
+
 
     <h2>EJERCICIO 9</h2>
-        <button id = "Texto" onclick="cortarTexto()">Cortar texto</button>
+        <button onClick= "Ejercicio9()"> Cortar Texto</button>
+        
 
     <h2>EJERCICIO 10</h2>
         <button id = "String" onclick="stringSeparador()">String con separador</button>
@@ -65,5 +84,6 @@
 
     <script src="ejercicios.js"></script>
     <script src="utils.js"></script>
+    </section>
 </body>
 </html>
