@@ -67,7 +67,7 @@ function Ejercicio6A(){
     resultado.textContent = resultadoTexto;  
     }
     else{
-        resultado.innerHTML = "Por favor, ingrese un número válido.";
+        resultado.textContent = "Por favor, ingrese un número válido.";
         return;
     }
 
@@ -77,14 +77,15 @@ function Ejercicio6B(){
     if(!isNaN(filas) && filas > 0){
         let resultadoTexto = "";
         for (let i = 1; i <= filas; i++) {
-            const espacios = " ".repeat(filas - i);
+            const espacios = "-".repeat(filas - i);
             const asteriscos = "*".repeat(2 * i - 1);
-            resultadoTexto += espacios + asteriscos + "\n";
+            const espacios2 = "-".repeat(filas - i);
+            resultadoTexto += espacios + asteriscos + espacios2 + "\n";
         }
         resultado.textContent = resultadoTexto; 
     } 
     else{
-        resultado.innerHTML = "Por favor, ingrese un número válido.";
+        resultado.textContent = "Por favor, ingrese un número válido.";
         return;
     }
 
