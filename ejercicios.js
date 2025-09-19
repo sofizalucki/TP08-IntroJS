@@ -57,11 +57,37 @@ function  Ejercicio5(){
     console.log(dobles)
     resultado.innerHTML = dobles;
 }
-function Ejercisio6A{
+function Ejercicio6A(){
+    filas = prompt("¿De cuantas filas quiere su piramide de asteriscos?")
+    if(!isNaN(filas) && filas > 0){
+    let resultadoTexto = "";
+    for (let i = 1; i <= filas; i++) {
+        resultadoTexto += "*".repeat(i) + "\n";
+    }
+    resultado.textContent = resultadoTexto;  
+    }
+    else{
+        resultado.innerHTML = "Por favor, ingrese un número válido.";
+        return;
+    }
 
 }
-function Ejercisio6B{
-    
+function Ejercicio6B(){
+    filas = prompt("¿De cuantas filas quiere su piramide de asteriscos?")
+    if(!isNaN(filas) && filas > 0){
+        let resultadoTexto = "";
+        for (let i = 1; i <= filas; i++) {
+            const espacios = " ".repeat(filas - i);
+            const asteriscos = "*".repeat(2 * i - 1);
+            resultadoTexto += espacios + asteriscos + "\n";
+        }
+        resultado.textContent = resultadoTexto; 
+    } 
+    else{
+        resultado.innerHTML = "Por favor, ingrese un número válido.";
+        return;
+    }
+
 }
 
 function Ejercicio7(){
