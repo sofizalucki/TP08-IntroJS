@@ -1,4 +1,74 @@
 #resultado {
-    white-space: pre-line;
+    white-space: pre;
     font-family: monospace;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+}
+body{
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    background-color:lightcyan;
+}
+section{
+    width: 47%;
+    background-color:lightblue;
+    border-radius: 35px;
+}
+section div{
+    border-radius: 20px;
+    background-color: lightgrey ;
+    width: 40%;
+    padding: 3%;
+    margin: 2%;
+}
+section div h2 {
+    color: seagreen;
+    font-weight: bolder; 
+    margin-bottom: 4%;
+}
+section div button {
+    font-style: none;
+    text-decoration: none;
+    border: 1px solid seagreen;
+    background-color: lightcyan;
+    padding: 0.5%;
+}
+section div button:hover {
+background-color: lightblue;
+}
+
+
+
+
+section.Ejs div{
+    margin-left: 35% ;
+}
+
+
+
+
+
+
+
+section.resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10%;
+}
+section.resultado div{
+    padding: 8%;
+}
+section.resultado div p {
+    background-color: whitesmoke;
+    border: 1px solid seagreen;
+    padding: 0.6%;
+    margin-bottom: 3%;
+   
 }

@@ -1,6 +1,8 @@
 const resultado = document.getElementById('resultado')
 const frutas = ["pera", "banana", "crotolamo", "naranja", "zandia", "olmo", "melon", "pomelo", "kiwi", "arandano"]
 resultado.textContent = "Aca se veran sus resultados"
+
+
 function clearCons(){
     console.clear();
     resultado.textContent = ""
@@ -18,13 +20,13 @@ function Ejercicio2(){
     for(const fruta of frutas){
         console.log(`Acaso la/el ${fruta} es tu frutita faborita`)
     }
-    const frutta = prompt("Que fruta desea estimade")
+    const frutta = prompt("Que fruta desea estimado")
     if (frutas.includes(frutta)){
-        resultado.textContent = `Perfecto bro, poseemos esa frutita ${frutta} en nuestro almacen, ahora te la traigo babe`
+        resultado.textContent = `Perfecto, poseemos esa frutita ${frutta} en nuestro almacen, ahora te la traigo `
         console.log("Si")
     }
     else{
-        resultado.textContent = `Ough, lo lamento, no poseemos tu frutita ${frutta}, pronto la conseguire`
+        resultado.textContent = `Ough, lo lamento, no poseemos la frutita ${frutta}, pronto la conseguiremos`
         console.log("So")
     }
 }
@@ -36,13 +38,14 @@ function Ejercicio3(){
     console.log(tres ? "Sip, 10 es === a '10' " : "Nop, 10 no es === a '10' ")
     console.log(`el tipo de dato de 10.6 es ${typeof 10.6}`)
     console.log(true == 1)
+    resultado.textContent = "Mire la consola"
 }
 function Ejercicio4() {
     const ciudad = {
-        nombre: prompt("Ingrese el nombre de su ciudad"),
-        poblacion: prompt("Ingrese la poblacion de su ciudad"),
-        fechaFundacion: prompt("Ingrese la fecha de fundacion de su ciudad"),
-        extension: prompt("Ingrese la extension de su ciudad")
+        Nombre: prompt("Ingrese el nombre de su ciudad"),
+        Poblacion: prompt("Ingrese la poblacion de su ciudad"),
+        FechaDeFundacion: prompt("Ingrese la fecha de fundacion de su ciudad"),
+        Extension: prompt("Ingrese la extension de su ciudad")
     };
 
     resultado.innerHTML = "Estos son los atributos de su ciudad:<br>";
@@ -95,12 +98,26 @@ function Ejercicio7(){
     const input = document.getElementById('Noms').value;
     const separados = input.split(',')
     const elegidos = elegirNombresConA(separados)
-    document.getElementById('resultado').textContent = elegidos.join(', ')
+    resultado.textContent = elegidos.join(', ')
 }
 function Ejercicio8(){
     const text = document.getElementById('cadtxt').value;
     const busc = document.getElementById('buscarP').value;
     const reemp = document.getElementById('reemplazarP').value;
     const resultado = reemplazarTexto(text, busc, reemp);
-    document.getElementById('resultado').textContent = resultado;
+    resultado.textContent = resultado;
+}
+
+function Ejercicio9(){
+
+}
+function Ejercicio10(){
+    const input = prompt("Ingrese una serie de elementos separados por una coma")
+    const separados2 = input.split(',')
+    const guion = separados2.join(' - ');
+    console.log(guion)
+    resultado.textContent = guion
+}
+function Ejercicio11(){
+
 }

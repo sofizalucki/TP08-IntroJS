@@ -8,84 +8,88 @@
 </head>
 <body>
 
-    <section>
-    <p id="resultado" ></p>
-    <button onClick= "clearCons()"> Limpiar la consola y el resultado</button>
+    <section class = "resultado">
+        <div>
+            <h2>Resultados</h2>
+            <p id="resultado" ></p>
+            <button onClick= "clearCons()"> Limpiar</button>    
+        </div>
     </section>
-    <section>
-        
-    <div>
-        <h2>EJERCICIO 1</h2>
-        <p>Ingrese su nombre</p>
-        <input type="text" name="nombre" id ="nombre">
-        <p>Ingrese su fecha de nacimiento</p>
-        <input type="date" name="numero" id="numero" >
-        <button onClick= "Ejercicio1()"> Calcular edad</button>
-        
-    </div>    
 
 
-    <div>
-        <h2>EJERCICIO 2</h2>
-        <button id = "Fruta" onClick="Ejercicio2()">Tirar Fruta</button>
-    </div>
+    <section class = "Ejs">
+            
+        <div>
+            <h2>EJERCICIO 1</h2>
+            <p>Ingrese su nombre</p>
+            <input type="text" name="nombre" id ="nombre">
+            <p>Ingrese su fecha de nacimiento</p>
+            <input type="date" name="numero" id="numero" >
+            <button onClick= "Ejercicio1()"> Calcular edad</button>
+            
+        </div>    
 
 
-    <div>
-        <h2>EJERCICIO 3</h2>
-        <button id = "Comparar" onClick="Ejercicio3()">Comparando datos y tipos</button>
-    </div>
-
-    <div>
-        <h2>EJERCICIO 4</h2>
-        <button id = "Objeto" onClick="Ejercicio4()">Crear objeto</button>
-    </div>
-
-    <div>
-        <h2>EJERCICIO 5</h2>
-        <input type="text" id="numeros" placeholder="Ej: 1,2,3,4,5">
-        <button id = "Doble" onClick="Ejercicio5()">Duplicar elementos</button>
-        
-    </div>
-
-    <div>
-        <h2>EJERCICIO 6 A</h2>
-        <button id = "Triangulo" onClick="Ejercicio6A()">Triangulo de asteriscos no centrado</button>
-        <h2>EJERCICIO 6 B</h2>
-        <button id = "Triangulo" onClick="Ejercicio6B()">Triangulo de asteriscos no centrado</button>
-
-    </div>
-<div>        
-    <h2>EJERCICIO 7</h2>
-        <p>Ingresá nombres separados por coma. Se mostrarán los que empiezan con 'A'.</p>
-        <input type="text" id="Noms" placeholder="Ej: Ana,Juan,Alberto">
-        <button onClick= "Ejercicio7()"> Nombres con A</button>
-</div>
-    <h2>EJERCICIO 8</h2>
-        <input type="text" id="cadtxt" placeholder="Texto">
-        <input type="text" id="buscarP" placeholder="Palabra a reemplazar">
-        <input type="text" id="reemplazarP" placeholder="Reemplazo">
-        <p>Ingresa una cadena de texto, una palabra que quieras reemplazar y la palabra de remplazo</p>
-        <button onClick= "Ejercicio8()"> Reemplazar palabra</button>
+        <div>
+            <h2>EJERCICIO 2</h2>
+            <button id = "Fruta" onClick="Ejercicio2()">Tirar Fruta</button>
+        </div>
 
 
-    <h2>EJERCICIO 9</h2>
-        <button onClick= "Ejercicio9()"> Cortar Texto</button>
-        
+        <div>
+            <h2>EJERCICIO 3</h2>
+            <button id = "Comparar" onClick="Ejercicio3()">Comparando datos y tipos</button>
+        </div>
 
-    <h2>EJERCICIO 10</h2>
-        <button id = "String" onclick="stringSeparador()">String con separador</button>
-        
-    <h2>EJERCICIO 11</h2>
-        <button id = "Calcu" onclick="calcuRecaudacion()">Calcular Recaudacion</button>
+        <div>
+            <h2>EJERCICIO 4</h2>
+            <button id = "Objeto" onClick="Ejercicio4()">Crear objeto</button>
+        </div>
 
+        <div>
+            <h2>EJERCICIO 5</h2>
+            <p>Ingrese una serie de numeros para duplicar</p>
+            <input type="text" id="numeros" placeholder="Ej: 1,2,3,4,5">
+            <button id = "Doble" onClick="Ejercicio5()">Duplicar elementos</button>
+            
+        </div>
 
+        <div>
+            <h2>EJERCICIO 6 A</h2>
+            <button id = "Triangulo" onClick="Ejercicio6A()">Triangulo de asteriscos no centrado</button>
+            <h2>EJERCICIO 6 B</h2>
+            <button id = "Triangulo" onClick="Ejercicio6B()">Triangulo de asteriscos no centrado</button>
 
-    <div><p id="result"></p></div>
-
-
-    <script src="ejercicios.js"></script>
-    <script src="utils.js"></script>
+        </div>
+        <div>        
+        <h2>EJERCICIO 7</h2>
+            <p>Ingresá nombres separados por coma. Se mostrarán los que empiezan con 'A'.</p>
+            <input type="text" id="Noms" placeholder="Ej: Ana,Juan,Alberto">
+            <button onClick= "Ejercicio7()"> Nombres con A</button>
+        </div>
+        <div>
+        <h2>EJERCICIO 8</h2>
+            <input type="text" id="cadtxt" placeholder="Texto">
+            <input type="text" id="buscarP" placeholder="Palabra a reemplazar">
+            <input type="text" id="reemplazarP" placeholder="Reemplazo">
+            <p>Ingresa una cadena de texto, una palabra que quieras reemplazar y la palabra de remplazo</p>
+            <button onClick= "Ejercicio8()"> Reemplazar palabra</button>
+        </div>
+        <div>
+            <h2>EJERCICIO 9</h2>
+            <button onClick= "Ejercicio9()"> Cortar Texto</button>
+        </div> 
+        <div>
+           <h2>EJERCICIO 10</h2> 
+           <p>Ingrese una serie de elementos separados por una coma</p>
+            <button id = "String" onClick="Ejercicio10()">String con separador</button>
+        </div>
+        <div> 
+            <h2>EJERCICIO 11</h2>
+            <button id = "Calcu" onClick="Ejercicio11()">Calcular Recaudacion</button>
+        </div>
+        <script src="ejercicios.js"></script>
+        <script src="utils.js"></script>
     </section>
 </body>
 </html>
