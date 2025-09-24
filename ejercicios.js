@@ -109,7 +109,10 @@ function Ejercicio8(){
 }
 
 function Ejercicio9(){
-
+    const txt = document.getElementById('txt').value;
+    const cant = parseInt(document.getElementById('cant').value);
+    const resultado = cortarTexto(txt, cant);
+    resultado.textContent = resultado;
 }
 function Ejercicio10(){
     const input = prompt("Ingrese una serie de elementos separados por una coma")
@@ -119,5 +122,10 @@ function Ejercicio10(){
     resultado.textContent = guion
 }
 function Ejercicio11(){
-
+    const input = document.getElementById('pedidos').value;
+    const pedido = input.split(',').map(p => p.trim());
+    const tot = calcularTotal(pedido);
+    resultado.textContent = `RECAUDACION TOTAL: $${tot.toFixed(2)}`;
+     
+  
 }
